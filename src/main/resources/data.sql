@@ -1,5 +1,9 @@
-INSERT INTO app_usuario (username, password, role) VALUES ('user1', '$2a$10$B/1gkQAdo05RYkcB7jOhgO4plo9Ed2In8P6qJ.4DzwB5bi461bF6K', 'USER');
-/*   Esto lo anoto aquí solo para que el profe vea cuál es la contraseña.  Jamás pondría notas así en un código real 
-CONTRASEÑA              ENCRIPTACIÓN
- *   123                   $2a$10$B/1gkQAdo05RYkcB7jOhgO4plo9Ed2In8P6qJ.4DzwB5bi461bF6K
- */
+INSERT INTO app_usuario (username, password, role) VALUES ('user2', '$2a$10$uioWgiRiHRhA9erLswW9He39EV3PBcVd4wdmNcDsq1N3WHhvgHA8q', 'USER');
+INSERT INTO app_usuario (username, password, role) VALUES ('user1', '$2a$10$qKo4xv3RUlx8R8HQt0Pq7uI/xVJ687vDkG5XYb.QtJoRBEgXGqEzi', 'USER');
+INSERT INTO app_usuario (username, password, role) VALUES ('adm1', '$2a$10$qKo4xv3RUlx8R8HQt0Pq7uI/xVJ687vDkG5XYb.QtJoRBEgXGqEzi', 'ADMIN');
+/* al ejecutarse el main van a crear usuarios con contraseñas encriptadas
+ID      CONTRASEÑA      ENCRIPTACIÓN
+user2   password123     $2a$10$uioWgiRiHRhA9erLswW9He39EV3PBcVd4wdmNcDsq1N3WHhvgHA8q
+user1   123             $2a$10$qKo4xv3RUlx8R8HQt0Pq7uI/xVJ687vDkG5XYb.QtJoRBEgXGqEzi
+adm1    123
+*/
